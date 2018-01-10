@@ -3,11 +3,12 @@ function tratarErroELancar(erro) {
     // throw 10
     // throw true
     // throw 'mensagem'
-    // throw {
-    //  nome: erro.name,
-    //  msg: erro.message,
-    //  date: new Date
-    // }
+    // throw erro 
+    throw {
+        nome: erro.name,
+        msg: erro.message,
+        date: new Date
+    }
 }
 
 function imprimirNomeGritado(obj) {
@@ -20,5 +21,5 @@ function imprimirNomeGritado(obj) {
     }
 }
 
-const obj = { nome: 'Roberto' }
+const obj = { nome: 'Leonardo' }
 imprimirNomeGritado(obj)
